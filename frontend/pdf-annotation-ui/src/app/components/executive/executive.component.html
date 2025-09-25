@@ -1,0 +1,16 @@
+<h2>Executive Page</h2>
+
+<label>
+  Process ID:
+  <input [(ngModel)]="process" type="number" />
+</label>
+<label>
+  Form ID:
+  <input [(ngModel)]="formId" type="number" />
+</label>
+
+<button (click)="fetch()">Fetch Mappings</button>
+
+
+<h3>Mappings:</h3>
+<pre>{{ mappings | json }}</pre>

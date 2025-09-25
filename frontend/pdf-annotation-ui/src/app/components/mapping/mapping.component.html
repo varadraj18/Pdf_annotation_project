@@ -1,0 +1,15 @@
+<h2>PDF Mapping (PDF ID: {{ pdfId }})</h2>
+
+<div style="position: relative; display: inline-block;">
+  <canvas #pdfCanvas style="border:1px solid black;"></canvas>
+</div>
+
+<br /><br />
+
+
+<label>
+  Field Name:
+  <input [(ngModel)]="fieldName" placeholder="Enter field name" />
+</label>
+
+<button (click)="save()">Save Mapping</button>
